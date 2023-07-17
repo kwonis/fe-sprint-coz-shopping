@@ -5,16 +5,17 @@ return <header className="headerContainer">
 <div className='LogoCon'>
 <Link to='/'>
     <span className='Logo'>
-      <img src='logo.png' />
-    </span></Link>
-    <Link to='/'>
-      <span className="Logo-title">
+      <img src={process.env.PUBLIC_URL + '/logo.png'} />
+    </span>
+</Link>
+<Link to='/'>
+<span className="Logo-title">
     COZ Shopping
 </span>
 </Link>
 </div>
 <span className='menu' onClick={menuHandle}>
-<img src='menu.png' />
+<img src={process.env.PUBLIC_URL + '/menu.png'}/>
 </span>
 </header>
 }
